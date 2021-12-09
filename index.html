@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://www.gstatic.com/charts/loader.js"></script>
+        <script defer src="script.js"></script>
+       
+    </head>
+    <body>
+        <div class="form_container">
+        <p>&nbsp</p>
+        <form name="form" method="post">
+            <label for="location">Langtitude</label><br>
+            <input type="text" id="langtitude" name="langtitude" required><br>
+            <label for="location">Longitude</label><br>
+            <input type="text" id="longtitude" name="longtitude" required>
+            <br>
+            <br><input type="button" class="button" value="Actual Position" onClick=getLocation()><br>
+            <br>
+            <br>
+            <br>
+            <label for="fname">Panel tilt:</label><br>
+            <input type="text" id="tilt" name="tilt" required><br>
+            <label for="lname">Panel azimuth:</label><br>
+            <input type="text" id="azimuth" name="azimuth" required><br><br>
+            <label for="lname">Panel output(W):</label><br>
+            <input type="text" id="output" name="output" required><br><br>
+            <input type="button" class="button" value="Show forecast!" onClick=submited(this.form)>
+        </form>
+        <p>&nbsp</p>
+        </div>
+        
+
+
+        <div id="curve_chart"></div>
+        <div>
+      </body>
+</html>
